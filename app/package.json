@@ -21,7 +21,21 @@
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
     "ionic-plugin-keyboard",
-    "com.unarin.cordova.beacon"
+    "cordova-plugin-camera",
+    {
+      "locator": "https://github.com/petermetz/cordova-plugin-ibeacon.git",
+      "id": "com.unarin.cordova.beacon"
+    },
+    {
+      "locator": "https://github.com/salbahra/cordova-plugin-networkinterface.git",
+      "id": "cordova-plugin-networkinterface"
+    },
+    {
+      "locator": "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+      "id": "cordova-plugin-x-toast"
+    }
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [
+    "ios"
+  ]
 }

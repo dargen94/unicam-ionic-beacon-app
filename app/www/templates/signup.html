@@ -1,0 +1,36 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Registrati</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeSignup()">Chiudi</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <img style="height:200px; display:block; margin:0px auto; text-align:center; padding: 5px 5px 5px 5px;" src="{{signupData.image.src}}" data-ng-click="newImage()">
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Username</span>
+        <input type="text" data-ng-model="signupData.username" data-ng-change="checkUsername()" placeholder="Username">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Nome</span>
+        <input type="text" data-ng-model="signupData.firstname" placeholder="Nome">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Cogname</span>
+        <input type="text" data-ng-model="signupData.lastname" placeholder="Cognome">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Password</span>
+        <input type="password" data-ng-model="signupData.password" placeholder="Password">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Conferma Password</span>
+        <input type="password" data-ng-model="signupData.check_password" placeholder="Conferma password">
+      </label>
+      <label class="item">
+        <button class="button button-block button-positive" ng-click="doSignup()">Registrati</button>
+      </label>
+    </div>
+  </ion-content>
+</ion-modal-view>
